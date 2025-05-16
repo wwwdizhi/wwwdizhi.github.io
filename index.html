@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最新发布地址</title>
+    <!--demo-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFA07A;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .button {
+            background-color: white;
+            border: none;
+            color: #FFA07A;
+            padding: 15px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 360px;
+            font-weight: 600;
+        }
+        .reminder {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 360px;
+        }
+        h3 {
+            margin-top: 0;
+            text-align: center;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+            font-size: 14px;
+            color: #808080;
+        }
+    </style>
+</head>
+<body>
+<button class="button"><a onclick="redirectToRandomSubdomain('2295.top')" target="_blank">》》》 点击查询最新域名 《《《</a></button>
+<button class="button"><a onclick="redirectToRandomSubdomain('2295.top')" target="_blank">》》》 点击查询最新域名 《《《</a></button>
+<button class="button"><a onclick="redirectToRandomSubdomain('2295.top')" target="_blank">》》》 点击查询最新域名 《《《</a></button>
+<div class="reminder">
+    <h3>📝 温馨提示</h3>
+    <ul>
+        <li>安卓请使用谷歌(Chrome)浏览器访问，无广告/体验流畅/速度更快。iPhone请使用手机自带Safari浏览器访问。</li>
+        <li>为防止丢失本站，请立即收藏该页地址，收藏并分享给好友。</li>
+        <li>本站永久免费更新，寻片/留言/建议/每天必看，用心为您服务！</li>
+    </ul>
+</div>
+<script>
+    function generateRandomString(length) {
+      var result = '';
+      var characters = 'abcdefghijklmnopqrstuvwxyz';
+      var charactersLength = characters.length;
+      for (var i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+      }
+      return result;
+    }
+
+    function redirectToRandomSubdomain(domain) {
+      var randomSubdomain = generateRandomString(8); // 生成一个长度为8的随机字符串
+      window.location.href = "https://" + domain + "/#" + randomSubdomain;
+    }
+</script>
+</body>
+</html>
